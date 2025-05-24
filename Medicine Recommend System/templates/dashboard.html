@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Health Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    .header {
+      background-color: #1f1f1f;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .sidebar {
+      width: 200px;
+      background-color: #333;
+      position: fixed;
+      top: 70px;
+      left: 0;
+      height: 100%;
+      padding-top: 30px;
+    }
+
+    .sidebar a {
+      padding: 12px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      background-color: #575757;
+    }
+
+    .main {
+      margin-left: 210px;
+      padding: 20px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .button-group button {
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+      color: black;
+    }
+
+    .disease { background-color: #F39334; }
+    .description { background-color: #268AF3; }
+    .precaution { background-color: #F371F9; }
+    .medication { background-color: #F8576F; }
+    .workout { background-color: #99F741; }
+    .diet { background-color: #E5E23D; }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>SSR Health Prediction Dashboard</h1>
+  </div>
+
+  <div class="sidebar">
+    <a href="#">Home</a>
+    <a href="#">Predictions</a>
+    <a href="#">Patients</a>
+    <a href="#">Reports</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="main">
+    <div class="card">
+      <h3>AI System Output</h3>
+      <div class="button-group">
+        <button class="disease">Disease</button>
+        <button class="description">Description</button>
+        <button class="precaution">Precaution</button>
+        <button class="medication">Medications</button>
+        <button class="workout">Workouts</button>
+        <button class="diet">Diets</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>Patient Summary</h3>
+      <p>Symptoms entered: <strong>Itching</strong></p>
+      <p>Predicted Disease: <strong>Fungal Infection</strong></p>
+      <p>Date: <strong>12 May 2025</strong></p>
+    </div>
+
+    <div class="card">
+      <h3>Health Tips</h3>
+      <ul>
+        <li>Maintain hygiene to avoid infections.</li>
+        <li>Follow prescribed medication regularly.</li>
+        <li>Include vitamin-rich food in your diet.</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
